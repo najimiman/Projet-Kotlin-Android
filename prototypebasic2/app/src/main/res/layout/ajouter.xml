@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="350dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="16dp"
+            android:background="#7E009688"
+            android:layout_margin="15dp"
+            android:text="New"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+          />
+
+        <EditText
+            android:id="@+id/nomtache"
+            android:layout_width="351dp"
+            android:layout_height="55dp"
+            android:layout_margin="15dp"
+            android:layout_marginBottom="48dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="362dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="32dp"
+            android:ems="10"
+            android:hint="datetime"
+            android:inputType="datetime" />
+
+        <Button
+            android:id="@+id/addtachee"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:background="#B7009688"
+            android:text="Ajouter"
+            android:textColor="#FFFDFD"
+            android:textSize="20dp"
+            android:textStyle="bold"
+           />
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:background="#B7009688"
+            android:text="nn"
+            android:textColor="#FFFDFD"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="Addd"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

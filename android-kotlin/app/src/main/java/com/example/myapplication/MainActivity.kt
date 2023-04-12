@@ -1,7 +1,9 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AlertDialog
 import android.util.Log
 import android.view.View
 import android.widget.Button
@@ -59,7 +61,11 @@ class MainActivity : AppCompatActivity() {
         chois.isEnabled=false
         Winner()
     }
-
+    fun StartAgain(){
+        val intent = Intent(this, MainActivity::class.java)
+        // start your next activity
+        startActivity(intent)
+    }
     fun Winner(){
 
     if(playe1.contains(1)&& playe1.contains(2) &&playe1.contains(3)){
@@ -112,10 +118,46 @@ class MainActivity : AppCompatActivity() {
     }
     if(winner !=-1){
         if(winner==1){
-            Toast.makeText(this,"player 1 is ganne",Toast.LENGTH_LONG).show()
+            //Toast.makeText(this,"player 1 is ganne",Toast.LENGTH_LONG).show()
+            val builder = AlertDialog.Builder(this)
+            //set title for alert dialog
+            builder.setTitle("Gagner")
+            //set message for alert dialog
+            builder.setMessage("player 1 is ganne")
+            builder.setCancelable(true)
+            builder.setPositiveButton("start again"){dialogInterface, which ->
+                //Toast.makeText(applicationContext,"clicked yes",Toast.LENGTH_LONG).show()
+                finish()
+                StartAgain()
+            }
+            builder.setNeutralButton("Cancel"){dialogInterface , which ->
+                finish()
+            }
+            // Create the AlertDialog
+            val alertDialog: AlertDialog = builder.create()
+            // Set other dialog properties
+            alertDialog.setCancelable(false)
+            alertDialog.show()
+
         }
         else{
-            Toast.makeText(this,"player 2 is ganne",Toast.LENGTH_LONG).show()
+            //Toast.makeText(this,"player 2 is ganne",Toast.LENGTH_LONG).show()
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Gagner")
+            builder.setMessage("player 2 is ganne")
+            builder.setCancelable(true)
+            builder.setPositiveButton("again"){dialogInterface, which ->
+                //Toast.makeText(applicationContext,"clicked yes",Toast.LENGTH_LONG).show()
+                finish()
+                StartAgain()
+
+            }
+            builder.setNeutralButton("Cancel"){dialogInterface , which ->
+                finish()
+            }
+            val alertDialog: AlertDialog = builder.create()
+            alertDialog.setCancelable(false)
+            alertDialog.show()
         }
     }
 

@@ -19,8 +19,10 @@
             android:layout_marginRight="3pt"
             android:layout_marginBottom="3pt"
             android:background="@color/teal_700"
+            android:onClick="select"
             android:textColor="@color/white"
-            android:onClick="select"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button2"
@@ -30,7 +32,9 @@
             android:layout_marginBottom="3pt"
             android:background="@color/teal_700"
             android:onClick="select"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button3"
@@ -39,8 +43,10 @@
             android:layout_marginRight="3pt"
             android:layout_marginBottom="3pt"
             android:background="@color/teal_700"
+            android:onClick="select"
             android:textColor="@color/white"
-            android:onClick="select"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </TableRow>
 
@@ -56,9 +62,10 @@
             android:layout_marginRight="3pt"
             android:layout_marginBottom="3pt"
             android:background="@color/teal_700"
-            android:textColor="@color/white"
             android:onClick="select"
-            />
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button5"
@@ -67,8 +74,10 @@
             android:layout_marginRight="3pt"
             android:layout_marginBottom="3pt"
             android:background="@color/teal_700"
+            android:onClick="select"
             android:textColor="@color/white"
-            android:onClick="select"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button6"
@@ -77,8 +86,10 @@
             android:layout_marginRight="3pt"
             android:layout_marginBottom="3pt"
             android:background="@color/teal_700"
+            android:onClick="select"
             android:textColor="@color/white"
-            android:onClick="select"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
 
     </TableRow>
@@ -95,8 +106,10 @@
             android:layout_marginRight="3pt"
             android:layout_marginBottom="3pt"
             android:background="@color/teal_700"
+            android:onClick="select"
             android:textColor="@color/white"
-            android:onClick="select"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button8"
@@ -105,8 +118,10 @@
             android:layout_marginRight="3pt"
             android:layout_marginBottom="3pt"
             android:background="@color/teal_700"
+            android:onClick="select"
             android:textColor="@color/white"
-            android:onClick="select"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button9"
@@ -115,7 +130,9 @@
             android:layout_marginRight="3pt"
             android:layout_marginBottom="3pt"
             android:background="@color/teal_700"
+            android:onClick="select"
             android:textColor="@color/white"
-            android:onClick="select"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </TableRow>
 </TableLayout>
